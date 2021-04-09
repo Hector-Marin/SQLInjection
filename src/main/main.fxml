@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <content>
+      <GridPane alignment="center" hgap="10" prefHeight="370.0" prefWidth="306.0" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints valignment="CENTER" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="usernameField" GridPane.rowIndex="1" />
+            <PasswordField fx:id="passwordField" GridPane.rowIndex="4" />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#goToHome" text="Get User Info" textAlignment="JUSTIFY" GridPane.rowIndex="6" />
+            <Label text="Usuario" />
+            <Label text="Contraseña" GridPane.rowIndex="2" />
+            <Label fx:id="userInformationTitle" text="Información" visible="false" GridPane.rowIndex="9" />
+            <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="10">
+               <children>
+                  <Label fx:id="userInformation" />
+               </children>
+            </TextFlow>
+         </children>
+      </GridPane>
+   </content>
+</ScrollPane>
